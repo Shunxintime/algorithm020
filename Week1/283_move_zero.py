@@ -14,13 +14,13 @@
 
 class Solution:
     # 2. i遍历，j指向左边为0的位置。
-    def moveZeroes(self, nums: List[int]) -> None:
+    # def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
         j = 0
         for i in range(len(nums)):
-            if nums[i] != 0:
+            if (nums[i] != 0):
                 nums[i],nums[j] = nums[j],nums[i]
                 j+=1
 
